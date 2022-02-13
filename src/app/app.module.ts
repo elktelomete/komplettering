@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomiesComponent } from './profile/homies/homies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KontaktComponent,
-    InfoComponent
+    InfoComponent,
+    ProfileComponent,
+    HomiesComponent
   ],
   imports: [
     BrowserModule,
