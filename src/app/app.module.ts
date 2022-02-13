@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { FormsModule } from '@angular/forms';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KontaktComponent
+    KontaktComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
