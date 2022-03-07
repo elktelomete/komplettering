@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KontaktComponent implements OnInit {
 
+  sendMessage = new FormControl('');
+  
   constructor() { }
 
   ngOnInit(): void {

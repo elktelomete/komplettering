@@ -1,9 +1,6 @@
-<div class="container">
-  <p>Write me a letter comrade</p>
-  <form #elformo="ngForm">
-    {{ elformo.value | json }}
-    <br />
-    <br />
-    <input type="text" name="name" ngModel />
-  </form>
-</div>
+<div class="container pt-5">
+  <p cl>Write me a tiny message comrade, but make it short.</p></div>
+<div class="input-group spacing mx-auto" style="padding-left: 6.5rem;" >
+  <textarea id="" cols="30" rows="10" [formControl]="sendMessage" ></textarea></div>
+<div class="container pt-5">
+  <p>{{sendMessage.value}}</p></div>
