@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomiesComponent } from './profile/homies/homies.component';
+import { AngularQAComponent } from './angular-qa/angular-qa.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomiesComponent } from './profile/homies/homies.component';
     KontaktComponent,
     InfoComponent,
     ProfileComponent,
-    HomiesComponent
+    HomiesComponent,
+    AngularQAComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,15 @@
-<p>info works!</p>
+<div class="container-sm">
+
+    <h2 class="text-start pb-4">Angular Inlämning 1</h2>
+
+    <div class="text-start" *ngFor="let quest of questions ">
+
+        <h3 class="fw-bold">{{ quest.question }}</h3>
+
+        <p class="fw-normal" *ngIf="quest.answer">
+            {{ quest.answer }}
+        </p>
+
+    </div>
+
+</div>
