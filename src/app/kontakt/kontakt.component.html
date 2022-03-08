@@ -1,6 +1,18 @@
-<div class="container pt-5">
-  <p cl>Write me a tiny message comrade, but make it short.</p></div>
-<div class="input-group spacing mx-auto" style="padding-left: 6.5rem;" >
-  <textarea id="" cols="30" rows="10" [formControl]="sendMessage" ></textarea></div>
-<div class="container pt-5">
-  <p>{{sendMessage.value}}</p></div>
+<form #MsgForm="ngForm">
+  <div class="container pt-5">
+    <p>Write me a tiny message comrade.. but make it short.. ok?</p></div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group input-group spacing" style="padding-left: 6.5rem;" >
+        <textarea name="ak47" placeholder="Dear library..." cols="30" rows="10" [(ngModel)]="sendMessage.burnAfterSending">
+        </textarea>
+      </div>
+      <div class="container-fluid" style="padding: 0.5rem 0 0 6.5rem;">
+        <button type="submit" class=" btn btn-secondary">SEND</button>
+      </div>
+    </div>
+  </div>
+  <div class="container pt-5">
+    {{MsgForm.valid}}
+  </div>
+</form>

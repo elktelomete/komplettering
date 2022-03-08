@@ -9,8 +9,10 @@ import { FormControl } from '@angular/forms';
 })
 export class KontaktComponent implements OnInit {
 
-  sendMessage = new FormControl('');
-  
+  sendMessage = {
+    burnAfterSending: "",
+  }
+
   constructor() { }
 
   ngOnInit(): void {
