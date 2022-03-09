@@ -18,4 +18,10 @@ export class KontaktComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  alert() {
+    console.log('Этот цыпленок общается за железным занавесом... С ним в ГУЛАГ!',this.sendMessage);
+    alert(this.sendMessage.burnAfterSending);
+    
+  }
+
 }
