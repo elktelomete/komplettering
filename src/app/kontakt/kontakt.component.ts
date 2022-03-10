@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { __spreadArray } from 'tslib';
 import { ModalService } from '../services/modal.service';
 
 
@@ -14,15 +14,20 @@ export class KontaktComponent implements OnInit {
     burnAfterSending: "",
   }
 
-  constructor(public serv: ModalService) { }
-
-  ngOnInit(): void {
-  }
-
+  
   alert() {
     console.log('Этот цыпленок общается за железным занавесом... С ним в ГУЛАГ!',this.sendMessage);
     alert(this.sendMessage.burnAfterSending);
     
   }
 
+  public data2 = []
+
+  constructor(private dataSet: ModalService){
+
+  }
+  
+  ngOnInit(): void {
+    this.data2 = this.dataSet.getServiceData();
+  }
 }

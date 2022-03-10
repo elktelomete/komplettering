@@ -12,14 +12,4 @@ export class AppComponent {
 
   constructor(public modServ: ModalService) {}
 
-  
-  
-  bros($event: Event) {
-    console.log("hej")
-    
-    // $event.preventDefault()
-
-    // this.modServ.brosephs()
-  }
-  
 }

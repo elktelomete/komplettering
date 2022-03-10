@@ -1,4 +1,4 @@
-<form [ngClass]="{visible: serv.brosephs()}" #MsgForm="ngForm" (ngSubmit)="alert()">
+<form #MsgForm="ngForm" (ngSubmit)="alert()">
   <div class="container-sm">
   
   <div class="row-cols-auto">    
@@ -10,18 +10,22 @@
     placeholder="Dear library..." 
     cols="30" 
     rows="10" 
-    [(ngModel)]="sendMessage.burnAfterSending">    
-    </textarea>
+    [(ngModel)]="sendMessage.burnAfterSending"
+    ></textarea>
   </div>
-    <div>
+    <div class="pb-5">
       <button 
       type="submit" 
       class="btn btn-secondary">
         SEND
       </button>
     </div>
-  </div>
-  <div class="container pt-5">
-    {{sendMessage.burnAfterSending}}
+    <div class="row-cols-auto">
+      <!-- {{sendMessage.burnAfterSending}} -->
+      <p>this here is a service:</p>
+      <ul>
+        <li class="pb-3" *ngFor="let d2 of data2">data1: {{d2.data1}} <br> data2: {{d2.data2}}</li>
+      </ul>
+    </div>
   </div>
 </form>
