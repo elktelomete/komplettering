@@ -1,4 +1,4 @@
-<form #MsgForm="ngForm" (ngSubmit)="alert()">
+<form [ngClass]="{visible: serv.brosephs()}" #MsgForm="ngForm" (ngSubmit)="alert()">
   <div class="container-sm">
   
   <div class="row-cols-auto">    
@@ -22,7 +22,6 @@
     </div>
   </div>
   <div class="container pt-5">
-    {{MsgForm.valid}}
     {{sendMessage.burnAfterSending}}
   </div>
 </form>

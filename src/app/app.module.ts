@@ -8,7 +8,8 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { InfoComponent } from './info/info.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomiesComponent } from './profile/homies/homies.component';
-import { ServiceThisComponent } from './service-this/service-this.component';
+import { ModalComponent } from './modal/modal.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,14 @@ import { ServiceThisComponent } from './service-this/service-this.component';
     InfoComponent,
     ProfileComponent,
     HomiesComponent,
-    ServiceThisComponent
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

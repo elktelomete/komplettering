@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { ModalService } from '../services/modal.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class KontaktComponent implements OnInit {
     burnAfterSending: "",
   }
 
-  constructor() { }
+  constructor(public serv: ModalService) { }
 
   ngOnInit(): void {
   }
