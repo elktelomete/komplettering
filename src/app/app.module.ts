@@ -8,7 +8,7 @@ import { KontaktComponent } from './kontakt/kontakt.component';
 import { InfoComponent } from './info/info.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomiesComponent } from './profile/homies/homies.component';
-import { AngularQAComponent } from './angular-qa/angular-qa.component';
+import { ServiceThisComponent } from './service-this/service-this.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { AngularQAComponent } from './angular-qa/angular-qa.component';
     InfoComponent,
     ProfileComponent,
     HomiesComponent,
-    AngularQAComponent
+    ServiceThisComponent
   ],
   imports: [
     BrowserModule,

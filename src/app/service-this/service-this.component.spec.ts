@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularQAComponent } from './angular-qa.component';
+import { ServiceThisComponent } from './service-this.component';
 
-describe('AngularQAComponent', () => {
-  let component: AngularQAComponent;
-  let fixture: ComponentFixture<AngularQAComponent>;
+describe('ServiceThisComponent', () => {
+  let component: ServiceThisComponent;
+  let fixture: ComponentFixture<ServiceThisComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AngularQAComponent ]
+      declarations: [ ServiceThisComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularQAComponent);
+    fixture = TestBed.createComponent(ServiceThisComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
